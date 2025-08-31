@@ -1,0 +1,151 @@
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+import React, { useState, useEffect, useRef } from "react";
+    fontWeight: "600",
+    color: "#FFFFFF",
+  },
+  closeButton: {
+    padding: 5,
+  },
+  chatMessages: {
+    flex: 1,
+    maxHeight: 250,
+  },
+  chatMessagesContent: {
+    padding: 15,
+    flexGrow: 1,
+  },
+  chatMessage: {
+    marginBottom: 10,
+  },
+  userMessage: {
+    alignItems: "flex-end",
+  },
+  petMessage: {
+    alignItems: "flex-start",
+  },
+  messageBubble: {
+    maxWidth: "80%",
+    padding: 12,
+    borderRadius: 15,
+  },
+  userBubble: {
+    backgroundColor: COLORS.primary,
+  },
+  petBubble: {
+    backgroundColor: "#F0F0F0",
+  },
+  messageText: {
+    fontSize: 14,
+    lineHeight: 18,
+  },
+  userText: {
+    color: "#FFFFFF",
+  },
+  petText: {
+    color: COLORS.text,
+  },
+  chatInputContainer: {
+    flexDirection: "row",
+    padding: 15,
+    borderTopWidth: 1,
+    borderTopColor: "#E0E0E0",
+    alignItems: "flex-end",
+  },
+  chatInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#E0E0E0",
+    borderRadius: 20,
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    fontSize: 14,
+    maxHeight: 100,
+    minHeight: 40,
+    marginRight: 10,
+    textAlignVertical: 'top',
+  },
+  sendButton: {
+    backgroundColor: COLORS.primary,
+    borderRadius: 20,
+    padding: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  sendButtonDisabled: {
+    backgroundColor: "#CCC",
+  },
+});
